@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0; 
+}
+/*              <--NAVABAR-->    */
+.navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+}
+
+.strip {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.strip .logo {
+    margin-left: 10%;
+    margin-right: 100px;
+}
+
+.strip .under ul {
+    display: flex;
+    list-style: none;
+}
+
+.strip .under li {
+    margin-right: 40px; 
+}
+
+.strip .under a {
+    text-decoration: none;
+    color: black;
+}
+
+.strip .under a:hover {
+    color: rgb(88, 90, 241);
+    transition: 0.5s;
+}
+
+.strip .motyw {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.strip .buy-button {
+    margin-left: 20px;
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.buy-button {
+    background-color: rgb(88, 90, 241);
+    width: 120px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+.buy-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.buy-button i{
+    margin-right: 7.5px;
+}
+
+.buy-button:hover  {
+    background-color:  rgb(47, 50, 233);
+    transition: 0.5s;
+}
+
+/*                              <--SWITCH-->     */
+.motyw {
+    display: flex;
+    align-items: center;
+}
+
+.main-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 27px;
+    margin: 0 10px;
+}
+
+.main-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.motyw-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.motyw-switch:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .1s;
+    border-radius: 50%;
+}
+
+input:checked + .motyw-switch {
+    background-color: rgb(88, 90, 241);
+}
+
+input:checked + .motyw-switch:before {
+    transform: translateX(16px);
+}
+
+/*                                  <--Main zdjecie-->       */
+
+.main-web {
+    background-color: red;
+    height: 90vh;
+    background: linear-gradient(to bottom right, #111224,#2E2963,#746BBA, #E9D5E1);
+}
+
+.com-name {
+    color: white;
+    font-size: 70px;
+    margin-left: 110px;
+    padding-top: 90px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.describe {
+    color: rgb(177, 177, 177);
+    font-size: 27px;
+    margin-top: 30px;
+    margin-left: 125px;
+}
