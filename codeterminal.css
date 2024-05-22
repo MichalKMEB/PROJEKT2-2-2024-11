@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #a94ffe, #6c24f0);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#intro {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #000;
+    line-height: 1.6;
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+.editor-output-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#editor, #output{
+    margin-top: 50px;
+    width: 48%;
+    height: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Fira Code', monospace;
+    font-size: 1em;
+}
+
+#editor {
+    border: 2px solid #00f2fe;
+    background-color: #f9f9f9;
+    resize: none;
+}
+
+#output {
+    background-color: #eef2f3;
+    border: 2px solid #4facfe;
+    overflow: auto;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4facfe;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+button:hover {
+    background-color: #3a8cd7;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #2a6ea1;
+    transform: scale(1);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Runner</title>
+    <link rel="stylesheet" href="codeterminal.css">
+</head>
+<body>
+    <h1>Python Code Runner</h1>
+    <p id="intro">Nauka podstaw programowania jest kluczowa dla zrozumienia, jak działają komputery i aplikacje, których używamy na co dzień. Programowanie pozwala nam tworzyć własne aplikacje, automatyzować zadania oraz rozwiązywać problemy w sposób logiczny i efektywny. Poniżej znajdziesz edytor, w którym możesz pisać i uruchamiać kod w Pythonie, jednym z najpopularniejszych języków programowania dla początkujących.</p>
+    
+    <div class="editor-output-container">
+        <textarea id="editor" placeholder="Napisz kod tutaj..."></textarea>
+        <div id="output"></div>
+    </div>
+    
+    <button onclick="runCode()">Run Code</button>
+    <p id="result"></p>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+    <script src="codeterminal.js"></script>
+</body>
+</html>
